@@ -40,6 +40,7 @@ async function init() {
                            ▀▀▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▀╩
                                ╙╙▀▀▀▓▓▓▓▀▀▀╙╙
    `));
+   console.log(process.env.settings);
 
    // Define globals
    global.active = [];
