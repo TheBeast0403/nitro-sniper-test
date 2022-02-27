@@ -52,7 +52,6 @@ async function init() {
 
    // Try to parse settings
    try {
-      console.log(process.env.settings);
       global.settings = JSON5.parse(process.env.settings);
    } catch {
       return logger.critical(constants.invalidConfig);
