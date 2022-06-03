@@ -10,10 +10,6 @@ module.exports = async () => {
          if (client) {
             client.main = true;
             active.push(client);
-            if (settings.status.main.toLowerCase() !== 'default') {
-               client.user.setStatus(settings.status.main.toLowerCase());
-               client.user.setAFK(true);
-            }
          }
          fulfill();
       }, util.randomInt(1e3, 3e3));
