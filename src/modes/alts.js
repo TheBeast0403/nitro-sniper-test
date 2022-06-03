@@ -13,10 +13,7 @@ module.exports = async () => {
             const client = await new Sniper().init(token);
             if (client) {
                active.push(client);
-               if (settings.status.alts.toLowerCase() !== 'default') {
-                  client.user.setStatus(settings.status.alts.toLowerCase());
-                  client.user.setAFK(true);
-               }
+
             }
             fulfill();
          }, util.randomInt(1e3, 3e3));
